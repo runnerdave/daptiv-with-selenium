@@ -53,11 +53,18 @@ public class Context {
 		timesheetsLink.click();
 		Thread.sleep(1000);
 		
+		//clear method removes previous values in case a run of the program was already made
+		driver.findElement(By.xpath("//*[@id='workEntry0']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry0']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry1']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry1']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry2']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry2']")).sendKeys("5.2");
+		driver.findElement(By.xpath("//*[@id='workEntry37']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry37']")).sendKeys("2.0");
+		driver.findElement(By.xpath("//*[@id='workEntry38']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry38']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry39']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry39']")).sendKeys("7.2");
 		
 		driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
