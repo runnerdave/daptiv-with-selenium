@@ -2,6 +2,7 @@ package org.runnerdave.test;
 
 import java.util.ResourceBundle;
 
+import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -58,4 +59,9 @@ public class ContextTest extends TestCase {
 		assertTrue(dashboardTitleText.equalsIgnoreCase("Dashboard"));
 	}
 
+	@After
+	public void tearDown() throws Exception {
+		Thread.sleep(5000);
+		driver.close();
+	}
 }
