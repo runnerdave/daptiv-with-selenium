@@ -60,10 +60,12 @@ public class Context {
 		driver.findElement(By.xpath("//*[@id='workEntry1']")).sendKeys("7.2");
 		driver.findElement(By.xpath("//*[@id='workEntry2']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry2']")).sendKeys("5.2");
+		driver.findElement(By.xpath("//*[@id='workEntry24']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry24']")).sendKeys("1.0");
 		driver.findElement(By.xpath("//*[@id='workEntry37']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry37']")).sendKeys("2.0");
 		driver.findElement(By.xpath("//*[@id='workEntry38']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry38']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry38']")).sendKeys("6.2");
 		driver.findElement(By.xpath("//*[@id='workEntry39']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry39']")).sendKeys("7.2");
 		
@@ -76,7 +78,7 @@ public class Context {
 		driver.findElement(By.xpath("//*[@id='txtComment']")).sendKeys(myResources.getString("timesheet.submission.box.comment")); 
 		
 		//uncomment to perform a submission
-		//driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
+		driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
 
 		Thread.sleep(5000);
 		driver.close();
