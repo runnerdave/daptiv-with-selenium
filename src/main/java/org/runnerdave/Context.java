@@ -54,20 +54,20 @@ public class Context {
 		Thread.sleep(1000);
 		
 		//clear method removes previous values in case a run of the program was already made
-		driver.findElement(By.xpath("//*[@id='workEntry0']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry0']")).sendKeys("7.2");
-		driver.findElement(By.xpath("//*[@id='workEntry1']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry1']")).sendKeys("7.2");
-		driver.findElement(By.xpath("//*[@id='workEntry2']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry2']")).sendKeys("5.2");
-		driver.findElement(By.xpath("//*[@id='workEntry24']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry24']")).sendKeys("1.0");
-		driver.findElement(By.xpath("//*[@id='workEntry37']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry37']")).sendKeys("2.0");
-		driver.findElement(By.xpath("//*[@id='workEntry38']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry38']")).sendKeys("6.2");
-		driver.findElement(By.xpath("//*[@id='workEntry39']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry39']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry4']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry4']")).sendKeys("1");
+		driver.findElement(By.xpath("//*[@id='workEntry16']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry16']")).sendKeys("7.2");		
+		driver.findElement(By.xpath("//*[@id='workEntry42']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry42']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry43']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry43']")).sendKeys("7.2");
+//		driver.findElement(By.xpath("//*[@id='workEntry44']")).clear();
+//		driver.findElement(By.xpath("//*[@id='workEntry44']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry45']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry45']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry46']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry46']")).sendKeys("6.2");
 		
 		driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
 		Thread.sleep(5000);
@@ -78,10 +78,10 @@ public class Context {
 		driver.findElement(By.xpath("//*[@id='txtComment']")).sendKeys(myResources.getString("timesheet.submission.box.comment")); 
 		
 		//uncomment to perform a submission
-		driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
+		//driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
 
 		Thread.sleep(5000);
-		driver.close();
+		//driver.close();
 
 	}
 	
