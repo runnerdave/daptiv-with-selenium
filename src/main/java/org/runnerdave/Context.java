@@ -56,14 +56,14 @@ public class Context {
 		//clear method removes previous values in case a run of the program was already made
 		driver.findElement(By.xpath("//*[@id='workEntry4']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry4']")).sendKeys("1");
-		driver.findElement(By.xpath("//*[@id='workEntry16']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry16']")).sendKeys("7.2");		
+//		driver.findElement(By.xpath("//*[@id='workEntry16']")).clear();
+//		driver.findElement(By.xpath("//*[@id='workEntry16']")).sendKeys("7.2");		
 		driver.findElement(By.xpath("//*[@id='workEntry42']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry42']")).sendKeys("7.2");
 		driver.findElement(By.xpath("//*[@id='workEntry43']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry43']")).sendKeys("7.2");
-//		driver.findElement(By.xpath("//*[@id='workEntry44']")).clear();
-//		driver.findElement(By.xpath("//*[@id='workEntry44']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry44']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry44']")).sendKeys("7.2");
 		driver.findElement(By.xpath("//*[@id='workEntry45']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry45']")).sendKeys("7.2");
 		driver.findElement(By.xpath("//*[@id='workEntry46']")).clear();
