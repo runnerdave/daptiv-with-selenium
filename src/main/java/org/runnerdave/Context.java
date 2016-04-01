@@ -58,7 +58,7 @@ public class Context {
 		driver.findElement(By.xpath("//*[@id='workEntry4']")).sendKeys("1");
 //		driver.findElement(By.xpath("//*[@id='workEntry16']")).clear();
 //		driver.findElement(By.xpath("//*[@id='workEntry16']")).sendKeys("7.2");		
-		driver.findElement(By.xpath("//*[@id='workEntry42']")).clear();
+//		driver.findElement(By.xpath("//*[@id='workEntry42']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry42']")).sendKeys("7.2");
 		driver.findElement(By.xpath("//*[@id='workEntry43']")).clear();
 		driver.findElement(By.xpath("//*[@id='workEntry43']")).sendKeys("7.2");
