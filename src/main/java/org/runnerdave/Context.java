@@ -1,5 +1,6 @@
 package org.runnerdave;
 
+import java.io.File;
 import java.util.ResourceBundle;
 
 import org.openqa.selenium.By;
@@ -30,6 +31,9 @@ public class Context {
 			driver = new InternetExplorerDriver();
 			break;
 		case "chrome":
+			File file = new File("chromedriver.exe");
+
+            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 			driver = new ChromeDriver();
 			break;
 		}
@@ -58,16 +62,16 @@ public class Context {
 		driver.findElement(By.xpath("//*[@id='workEntry4']")).sendKeys("1");
 //		driver.findElement(By.xpath("//*[@id='workEntry16']")).clear();
 //		driver.findElement(By.xpath("//*[@id='workEntry16']")).sendKeys("7.2");		
-//		driver.findElement(By.xpath("//*[@id='workEntry42']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry42']")).sendKeys("7.2");
-		driver.findElement(By.xpath("//*[@id='workEntry43']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry43']")).sendKeys("7.2");
-		driver.findElement(By.xpath("//*[@id='workEntry44']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry44']")).sendKeys("7.2");
-		driver.findElement(By.xpath("//*[@id='workEntry45']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry45']")).sendKeys("7.2");
-		driver.findElement(By.xpath("//*[@id='workEntry46']")).clear();
-		driver.findElement(By.xpath("//*[@id='workEntry46']")).sendKeys("6.2");
+		driver.findElement(By.xpath("//*[@id='workEntry28']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry28']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry29']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry29']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry30']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry30']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry31']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry31']")).sendKeys("7.2");
+		driver.findElement(By.xpath("//*[@id='workEntry32']")).clear();
+		driver.findElement(By.xpath("//*[@id='workEntry32']")).sendKeys("6.2");
 		
 		driver.findElement(By.xpath("//*[@id='SubmitButton']")).click();
 		Thread.sleep(5000);
